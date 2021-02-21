@@ -153,9 +153,11 @@ animation: ;
     color: red;
 }
 
-.shop_image img{
+.image img{
+    padding: 20px 0;
     overflow: hidden;
     max-width: 100%;
+    align-items: center;
 }
 
 .main_items{
