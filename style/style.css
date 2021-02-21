@@ -38,6 +38,7 @@ body{
     min-height: 100%;
 }
 
+
 .image-slider{
     padding: 30px 0 70px 0;
 }
@@ -45,12 +46,6 @@ body{
 .image-slider_image{
     max-width: 100%;
 }
-
-
-
-
-
-
 
 .main{
     padding: 30px;
@@ -64,13 +59,14 @@ body{
 
 ._tabs{
     text-align: center;
-    padding:25px;
+    padding:21px;
     
 }
 
 #shop, #items{
-    padding:15px;
+    padding:3px 15px;
     margin:5% ;
+    border-radius: 15px;
     font-size: 26px;
     font-family:   -apple-system, BlinkMacSystemFont, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-weight: 800;
@@ -79,27 +75,45 @@ body{
 }
 #shop:hover,
 #items:hover{
-/* background: grey; */
-box-shadow: 5px 5px 5px 5px grey;
-opacity: 0.4;
-padding: 0%;}
 
+box-shadow: 5px 5px 5px 5px grey;
+opacity: 0.7;
+
+}
 #title_shop{
     
     font-family: -apple-system, BlinkMacSystemFont,cursive;
     font-size: 30px;
+    text-align: center;
 }
 
 #info{
-    font-size: 19px;
+    font-size: 20px;
+    text-align: center;
 }
 
 #text_info {
     font-weight: 900;
-   font-size: 24px;
+    font-size: 35px;
     color: red;
- 
+    text-align: center;
+    /* animation: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
 }
+/* #text_info::before{
+animation: ;
+}
+#text_info::after{
+
+} */
+
+/* @keyframes jump{
+    0%{left: 1%;}
+    50%{left: 20%;}
+    100%{left: 0%;}
+} */
 
 #mask_info{
     font-size: 15px;
@@ -111,6 +125,7 @@ padding: 0%;}
     padding: 15%;
     border-radius: 50%;
     font-weight: bolder;
+   
 }
 .image-slide{
     padding: 30px 0 70px 0  ;
@@ -122,16 +137,29 @@ padding: 0%;}
     max-width: 100%;
 }
 
+#main_info{
+    float: right;
+    color: rgb(65, 153, 236);
+    padding-right:40px ;
+    flex:  0 0 auto;
+}
 
+#title_shop{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(65, 153, 236);
+}
+#red{
+    color: red;
+}
 
-
-.slider_item{
+.main_items{
     text-align: center;
 }
- /* .slider_item img{
-    max-width: 34%;
-    max-height: 34%;
-} */
+.item{
+    text-align: right;
+}
+
 
 html,body{
     height:100%;
@@ -139,36 +167,9 @@ html,body{
 
 .wrapper{
     height:100%;
-    width: 90%;
-}
-.slick-slider{}
-
-.slick-list{
-    overflow: hidden;
-}
-.slick-track{
-    display: flex;
+    width: 100%;
 }
 
-.slick-slide{}
-
-.slick-slide.slick-active{}
-
-.slick-slide.slick-current{}
-
-.slick-slide.slick-center{}
-
-.slick-arrow{}
-
-.slick-arrow.slick-prev{}
-
-.slick-arrow.slick-next{}
-
-.slick-arrow.slick-disabled{}
-
-.slick-dots{}
-.slick-dots:li{}
-.slick-dots:button{}
 
 
 .swiper-container{
@@ -179,11 +180,6 @@ display: flex;
     min-width: 0px;
 }
 
-
- .slider{
-    /* position: relative; */
-    padding:0 60px ;
-}
 .slider .slick-arrow{
     /* position: absolute; */
     margin: -30px 0 0 0;
@@ -193,14 +189,23 @@ display: flex;
     width: 30;
     height: 50;
   } 
-/* .image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after{
     color: #aaa;
     font-size: 80px;
-} */
+}
  
+.image-slider .swiper-pagination{
+    bottom: 0;
+}
 
-
+.image-slider .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    background-color: purple;
+}
 
 
 
